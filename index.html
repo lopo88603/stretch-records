@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stretch Records</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ========================================
+    HEADER
+    ======================================== -->
+    <header>
+      <div class="container">
+        <h1>Stretch <span>Records</span></h1>
+        <p>Five artists. Five songs each. One glorious roster.</p>
+      </div>
+    </header>
+
+    <!-- ========================================
+    MAIN CONTENT
+    ======================================== -->
+    <main>
+      <div class="container">
+        <!-- ===== ARTIST CARDS (由 JavaScript 動態產生) ===== -->
+        <section class="artists-grid" id="artistsGrid"></section>
+
+        <!-- ===== NEWSLETTER SIGNUP FORM ===== -->
+        <section class="signup-form">
+          <h2>📬 Stay in the loop</h2>
+          <p>Get the latest releases and news from Stretch Records.</p>
+          <form class="form-row" action="#" method="post">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Sign Up</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- ========================================
+    FOOTER
+    ======================================== -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Stretch Records. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ========================================
+    JAVASCRIPT
+    ======================================== -->
+    <script src="script.js"></script>
+  </body>
+</html>

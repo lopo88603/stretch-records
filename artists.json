@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Pinkfong",
+    "genre": "Children's music",
+    "blurb": "The children's music powerhouse behind the most-watched video on the internet. Short, loud, unbelievably sticky.",
+    "photo": "images/pinkfong.jpeg",
+    "songs": [
+      { "title": "Baby Shark", "duration": "2:16" },
+      { "title": "Wheels on the Bus", "duration": "2:35" },
+      { "title": "Five Little Monkeys", "duration": "2:05" },
+      { "title": "Monkey Banana", "duration": "2:24" },
+      { "title": "Shark Family", "duration": "2:11" }
+    ]
+  },
+  {
+    "name": "Adriano Celentano",
+    "genre": "Italian pop",
+    "blurb": "Sixty years of Italian pop in one voice: rock and roll imported, rewritten and sung back louder.",
+    "photo": "images/adriano-celentano.jpg",
+    "songs": [
+      { "title": "Azzurro", "duration": "3:41", "lang": "it" },
+      { "title": "L'emozione non ha voce", "duration": "4:13", "lang": "it" },
+      {
+        "title": "Il ragazzo della via Gluck",
+        "duration": "4:16",
+        "lang": "it"
+      },
+      { "title": "Susanna", "duration": "4:26", "lang": "it" },
+      { "title": "Confessa", "duration": "4:16", "lang": "it" }
+    ]
+  },
+  {
+    "name": "Asake",
+    "genre": "Afrobeats",
+    "blurb": "Amapiano log drums, fuji chants and street-Yoruba hooks. The loudest new voice out of Lagos.",
+    "photo": "images/asake.jpg",
+    "songs": [
+      { "title": "Sungba", "duration": "2:47" },
+      { "title": "Joha", "duration": "2:35" },
+      { "title": "Jogodo", "duration": "3:08" },
+      { "title": "Amapiano", "duration": "3:22" },
+      { "title": "Lonely At The Top", "duration": "2:16" }
+    ]
+  },
+  {
+    "name": "Miyagi and Andy Panda",
+    "genre": "Hip-hop",
+    "blurb": "Two rappers from Vladikavkaz, half sung and half spoken, built on dub basslines and long reverbs.",
+    "photo": "images/miyagi-and-andy-panda.jpg",
+    "songs": [
+      { "title": "Kosandra", "duration": "3:18" },
+      { "title": "Utopia", "duration": "3:00" },
+      { "title": "Minor", "duration": "3:13" },
+      { "title": "Saloon", "duration": "2:46" },
+      { "title": "I Got Love", "duration": "4:04" }
+    ]
+  },
+  {
+    "name": "Johnny Cash",
+    "genre": "Country",
+    "blurb": "The man in black. Three chords, the truth, and a baritone that outlasted every genre it was filed under.",
+    "photo": "images/johnny-cash.jpg",
+    "songs": [
+      { "title": "Hurt", "duration": "3:36" },
+      { "title": "Ring of Fire", "duration": "2:38" },
+      { "title": "Highwayman", "duration": "3:03" },
+      { "title": "God's Gonna Cut You Down", "duration": "2:38" },
+      { "title": "Ghost Riders in the Sky", "duration": "3:45" }
+    ]
+  },
+  {
+    "name": "Taylor Swift",
+    "genre": "Pop",
+    "blurb": "One of the most awarded artists of all time, redefining pop music with every album.",
+    "photo": "images/taylor-swift.jpg",
+    "songs": [
+      { "title": "Blank Space", "duration": "3:51" },
+      { "title": "Shake It Off", "duration": "3:39" },
+      { "title": "Love Story", "duration": "3:55" },
+      { "title": "Bad Blood", "duration": "3:31" },
+      { "title": "Anti-Hero", "duration": "3:20" }
+    ]
+  }
+]
