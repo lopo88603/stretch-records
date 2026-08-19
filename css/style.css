@@ -1,0 +1,250 @@
+/* ========================================
+   Stretch Records - Main Stylesheet
+   ======================================== */
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8f6f2;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: white;
+  padding: 40px 0 30px;
+  text-align: center;
+  border-bottom: 4px solid #e94560;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+header h1 span {
+  color: #e94560;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-top: 8px;
+  font-weight: 400;
+}
+
+/* ===== Artist Grid ===== */
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 50px 0;
+}
+
+/* ===== Artist Card ===== */
+.artist-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.artist-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.artist-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.artist-info {
+  padding: 20px 24px 24px;
+}
+
+.artist-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.artist-genre {
+  font-size: 0.9rem;
+  color: #e94560;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.artist-blurb {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 12px 0 16px;
+  line-height: 1.5;
+}
+
+/* ===== Songs Table ===== */
+.songs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.songs-table th {
+  text-align: left;
+  font-weight: 600;
+  color: #888;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #eee;
+}
+
+.songs-table td {
+  padding: 6px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.songs-table tr:last-child td {
+  border-bottom: none;
+}
+
+.song-number {
+  color: #ccc;
+  font-weight: 600;
+  width: 28px;
+}
+
+.song-title {
+  font-weight: 500;
+}
+
+.song-duration {
+  color: #888;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #1a1a2e;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 30px 0;
+  text-align: center;
+  border-top: 4px solid #e94560;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* ===== Newsletter Form ===== */
+.signup-form {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px 0 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.signup-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.signup-form p {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.signup-form .form-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.signup-form input[type="email"] {
+  padding: 12px 18px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-width: 260px;
+  flex: 1;
+  transition: border-color 0.3s;
+}
+
+.signup-form input[type="email"]:focus {
+  outline: none;
+  border-color: #e94560;
+}
+
+.signup-form button {
+  padding: 12px 32px;
+  background: #e94560;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup-form button:hover {
+  background: #c73a52;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .artists-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .artist-image {
+    height: 200px;
+  }
+
+  .signup-form .form-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signup-form input[type="email"] {
+    min-width: 100%;
+    max-width: 400px;
+  }
+}
