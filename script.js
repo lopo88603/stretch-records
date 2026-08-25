@@ -91,16 +91,37 @@ function createArtistCard(artist) {
 }
 
 // ========================================
-// Three-line fetch() pattern
+// Added: Display loading message
 // ========================================
-fetch("artists.json")
-  .then((response) => response.json())
-  .then((artists) => {
-    for (const artist of artists) {
-      const card = createArtistCard(artist);
-      artistsGrid.appendChild(card);
-    }
-  })
-  .catch((error) => {
-    console.error("Error loading artists:", error);
-  });
+const loadingMessage = document.createElement("p");
+loadingMessage.textContent = "⏳ Loading artists... Please wait...";
+loadingMessage.style.textAlign = "center";
+loadingMessage.style.padding = "40px 0";
+loadingMessage.style.fontSize = "1.2rem";
+loadingMessage.style.color = "#666";
+artistsGrid.parentNode.insertBefore(loadingMessage, artistsGrid);
+
+// ========================================
+//Modification: Use setTimeout to delay by 2 seconds
+// ========================================
+setTimeout(() => {
+  // Fetch artists.json
+  fetch("artists.json")
+    .then((response) => response.json())
+    .then((artists) => {
+      // Clear loading message
+      loadingMessage.remove();
+
+      // Show artist cards
+      for (const artist of artists) {
+        const card = createArtistCard(artist);
+        artistsGrid.appendChild(card);
+      }
+    })
+    .catch((error) => {
+      console.error("Error loading artists:", error);
+      loadingMessage.textContent =
+        "❌ Failed to load artists. Please try again later.";
+      loadingMessage.style.color = "#e94560";
+    });
+}, 2000); // 2-second delay
